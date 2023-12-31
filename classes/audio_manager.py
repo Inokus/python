@@ -6,13 +6,13 @@ class AudioManager:
         self.file_handler = file_handler
         self.music_volume = 50
         self.sfx_volume = 50
-        self.menu_music = pygame.mixer.Sound("audio/music/Ludum Dare 30 - Track 6.wav")
+        self.menu_music = pygame.mixer.Sound("audio/music/Ludum_Dare_30_-_Track_6.ogg")
         self.in_game_music = pygame.mixer.Sound(
-            "audio/music/Ludum Dare 38 - Track 2.wav"
+            "audio/music/Ludum_Dare_38_-_Track_2.ogg"
         )
-        self.eat_sfx = pygame.mixer.Sound("audio/sfx/Eat.wav")
-        self.death1_sfx = pygame.mixer.Sound("audio/sfx/Death Sound 1.wav")
-        self.death2_sfx = pygame.mixer.Sound("audio/sfx/Death Sound 4.wav")
+        self.eat_sfx = pygame.mixer.Sound("audio/sfx/Eat.ogg")
+        self.death1_sfx = pygame.mixer.Sound("audio/sfx/Death_Sound_1.ogg")
+        self.death2_sfx = pygame.mixer.Sound("audio/sfx/Death_Sound_4.ogg")
 
     def set_volume(self):
         settings = self.file_handler.read(self.file_handler.settings_file_name)
